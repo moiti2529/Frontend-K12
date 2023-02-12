@@ -1,0 +1,93 @@
+/* css reset */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:  Arial, sans-serif;
+}
+body{
+    padding: 3rem;
+}
+h3{
+    margin-top: 3rem;
+}
+/* style phần thông tin cá nhân */
+h2{
+    color: rgb(41, 41, 110);
+    margin-bottom: 1rem;
+}
+td:first-child{
+    font-weight: bold;
+    width:8rem;
+    height: 2rem;
+}
+/* xếp ảnh và chữ ngang nhau */
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+img{
+    height: 10rem;
+    width: 10rem;
+}
+/* style phần mục tiêu */
+p{
+    margin-bottom: 1rem ;
+}
+hr{
+    font-size: large;
+    margin-bottom: 2rem;
+}
+/* style phần học vấn và kinh nghiệm */
+.time_stamps{
+    border-spacing:0 1rem;
+}
+.time_stamps tr{
+    height: fit-content;
+}
+.time_stamps tr td:first-child{
+    font-weight: lighter;
+    width : 12rem;
+    float: left;;
+}
+.time_stamps tr td:nth-child(2){
+    float: left;
+}
+/* Style phần kĩ năng */
+.border-bottom{
+    border-bottom: solid 1px black; /* chỗ này em chưa biết cách thêm dòng kẻ ngang vào hàng*/
+}
+.skills td:nth-child(2){
+    padding: 0 4rem;
+}
+/* chứng chỉ */
+
+.skills{
+    border-spacing:0 2rem;
+}
+#light{
+    font-weight: lighter;
+}
+/* sở thích */
+ul{
+    margin-left: 1rem;
+}
+/* dự án */
+h4{
+    margin-bottom: 1rem;
+}
+.bottom{
+    margin-bottom: 2rem;
+}
+/* liên hệ */
+ol{
+    margin-left: 1rem;
+}
+ol>li{
+    margin-bottom: .5rem;
+}
+a{
+    text-decoration: none;
+    color:blue
+}
