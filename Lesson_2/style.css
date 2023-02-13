@@ -6,21 +6,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /* style banner */
+.header{
+    background-color: rgb(247, 247, 242);
+    position: relative;
+}
 .header__banner{
     height: 500px;
     width: 100vw;
-    position: relative;
-}
-.header__banner>img{
-    height: 100%;
-    width: 100%;
-    padding:3rem 3rem 0 3rem;
+    /* position: absolute; */
 }
 .header__banner-text{
+    height: inherit;
+    background-image: url("./assets-20230210T080051Z-001/assets/Banner.png");
+    background-size: contain;
     color: #5dc76b;
-    position:absolute;
-    top: 200px;
-    left: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,4 +33,53 @@
 }
 .header__banner-text p{
     font-weight: 100;
+}
+.header__icon-frame{
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    background-color: #fff;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 73%;
+}
+.header__icon{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 10px;
+    background-image: url("./assets-20230210T080051Z-001/assets/ava.png");
+    background-size: contain;
+}
+.header__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 50px;
+}
+.profile--theme{
+    color: rgb(0, 132, 255);
+}
+.header__navbar-icon{
+    padding: 1rem;
+    height: 80%;
+    border-left: solid gray 1px;
+    border-right: solid gray 1px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.header__navbar-icon i{
+    margin-right: 1rem;
+}
+.header__navbar-icon:last-child{
+    border-left: none;
 }
