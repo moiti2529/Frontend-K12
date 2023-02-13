@@ -1,0 +1,37 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* style banner */
+.header__banner{
+    height: 500px;
+    width: 100vw;
+    position: relative;
+}
+.header__banner>img{
+    height: 100%;
+    width: 100%;
+    padding:3rem 3rem 0 3rem;
+}
+.header__banner-text{
+    color: #5dc76b;
+    position:absolute;
+    top: 200px;
+    left: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header__banner-text h1,p{
+    margin-bottom: 1rem;
+}
+.header__banner-text h1{
+    font-size: 3rem;
+}
+.header__banner-text p{
+    font-weight: 100;
+}
