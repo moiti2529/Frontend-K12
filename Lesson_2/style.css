@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* style banner */
 .header{
@@ -35,8 +35,8 @@
     font-weight: 100;
 }
 .header__icon-frame{
-    width: 230px;
-    height: 230px;
+    width: 170px;
+    height: 170px;
     margin: auto;
     border-radius: 50%;
     display: grid;
@@ -46,16 +46,16 @@
     background-color: #fff;
     left: 50%;
     transform: translate(-50%, 0);
-    top: 73%;
+    top: 80%;
 }
 .header__icon{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: auto;
     border-radius: 50%;
     padding: 10px;
-    background-image: url("./assets-20230210T080051Z-001/assets/ava.png");
-    background-size: contain;
+    background-image: url("./assets-20230210T080051Z-001/assets/ava.jpg");
+    background-size: cover;
 }
 .header__navbar{
     display: flex;
@@ -82,4 +82,26 @@
 }
 .header__navbar-icon:last-child{
     border-left: none;
+}
+.profile{
+    /* margin: 6rem 3rem 0; */
+}
+.profile1{
+    display: flex;
+    background-color: rgb(219, 215, 200);
+    padding: 8rem 3rem;
+}
+.profile__purpose,.profile__info{
+    width: 50%;
+    padding: 0 5rem;
+}
+.profile__purpose span, .profile__info span{
+    font-size: 2rem;
+}
+.profile__purpose p, .profile__info ul{
+    margin: 2rem 0;
+    list-style: none;
+}
+.profile__info ul li{
+    margin: 1rem 0;
 }
