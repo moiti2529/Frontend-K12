@@ -18,12 +18,13 @@
 .header__banner-text{
     height: inherit;
     background-image: url("./assets-20230210T080051Z-001/assets/Banner.png");
-    background-size: contain;
+    background-size: cover;
     color: #5dc76b;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    padding-top: 5rem;
 }
 .header__banner-text h1,p{
     margin-bottom: 1rem;
@@ -83,6 +84,7 @@
 .header__navbar-icon:last-child{
     border-left: none;
 }
+/* style profile */
 .profile{
     /* margin: 6rem 3rem 0; */
 }
@@ -95,7 +97,7 @@
     width: 50%;
     padding: 0 5rem;
 }
-.profile__purpose span, .profile__info span{
+.profile__purpose span, .profile__info span,.profile__cert>span,.profile__project>span{
     font-size: 2rem;
 }
 .profile__purpose p, .profile__info ul{
@@ -104,4 +106,144 @@
 }
 .profile__info ul li{
     margin: 1rem 0;
+}
+.profile2{
+    padding: 2rem 6rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 5fr 5fr;
+    gap: 1rem;
+}
+.profile2> *{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 0rem 2rem;
+    padding-bottom: 5rem;
+}
+.profile2--name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+.profile__exp ul,.profile__activity ul,.profile__education ul{
+    list-style: none;
+    margin-left: 2rem;
+}
+.profile__exp--title,.profile__activity--title,.profile__education--title{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.profile__exp--title::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(0, 132, 255); /* Change the color */
+    font-size: 2rem;
+    display: inline-block; 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  .profile__education--title::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(0, 132, 255); /* Change the color */
+    font-size: 2rem;
+    display: inline-block; 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.profile__activity--title::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(0, 132, 255); /* Change the color */
+    font-size: 2rem;
+    display: inline-block; 
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.profile__exp--time,.profile__education--time,.profile__activity--time{
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+.profile__exp--time button{
+    color: #fff;
+    background-color: rgb(0, 132, 255);
+    border: none;
+    padding: .25rem .5rem;
+    border-radius: 10%;
+    font-style: italic;
+}
+.profile__exp ul li{
+    margin-bottom: .5rem;
+}
+.profile__skills--progress,.profile__lang ul{
+    list-style: none;
+}
+.profile__skills-bar{
+    display: flex;
+}
+.profile__skills-bar div{
+    height: .25rem;
+    width:5rem;
+    background-color: gray;
+    margin: 2rem 1rem;
+}
+.profile__skills-bar div:first-child{
+    margin-left: 0;
+}
+.profile__skills-bar .profile--skills-acquired{
+    background-color: rgb(0, 132, 255);
+}
+.profile__hobby--illust{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: solid rgb(0, 132, 255) 0.25rem;
+    margin: 1rem 0;
+    /* color: rgb(0, 132, 255); */
+    font-size: 1.5rem;
+}
+.profile__hobby-list{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+.profile__hobby-list div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile__cert-showcase img{
+    height: 5rem;
+}
+.profile__cert-showcase{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+}
+.profile__cert-showcase div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+.profile__cert-container{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    row-gap: sandybrown;
+}
+.profile__cert-showcase:nth-child(2){
+    border-left: solid sandybrown;
+    padding-left: 1rem;
+
+}
+.profile__cert{
+    background-color: rgb(230, 226, 210);
+    padding: 2rem 6rem;
+}
+.profile__project-container{
+    /* display: grid;
+    grid-template-columns: 30% 30% 30%; */
+}
+.profile__project-frame{
+    border: solid black;
+    /* width: 5rem; */
 }
